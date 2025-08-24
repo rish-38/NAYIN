@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+.logo {
+    font-family: "Slackey", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #000;
+}
+
+.logo:hover {
+    color: #cc510d;
+}
+
+.navbar {
+    background-color: #ffff00;
+}
+
+.btn {
+    background-color: #ffff00 !important;
+    border: black 2px solid !important;
+    color: black;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn:hover {
+    background-color: #cc510d !important;
+    border: none !important;
+    color: white;
+    scale: 1.1;
+}
+
+.nav-item {
+
+    padding: 0px 10px 0px 10px;
+    font-size: 18px;
+    transition: 0.2s ease-out;
+
+}
+
+.nav-item::before {
+    content: ' ';
+    position: absolute;
+    border-bottom: #000 2px solid;
+    /* border-top: #000 2px solid; */
+    transform: scaleX(0);
+    transition: 0.2s;
+    pointer-events: none;
+    
+}
+
+#nav-1::before {
+    width: 64px;
+    height: 32px;
+}
+
+#nav-2::before {
+    width: 62px;
+    height: 32px;
+}
+
+#nav-3::before {
+    width: 88px;
+    height: 32px;
+}
+
+#nav-4::before {
+    width: 102px;
+    height: 32px;
+}
+#nav-5::before {
+    width: 82px;
+    height: 32px;
+}
+
+.nav-item:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-item:hover {
+    /* margin: 0 10px 0 10px; */
+    /* scale: 1.1; */
+    font-weight: 600;
+}
+
+.nav-link {
+    padding: 2px;
+}
+
+.hero {
+    background: linear-gradient(#121212b1, #121212c3), url(./media/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: grayscale(100%);
+    transition: 0.4s;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero:hover {
+    /* scale: 1.05; */
+    filter: grayscale(0%);
+
+
+}
+
+.hero .btn {
+    border: none !important;
+    /* color: white; */
+}
+
+.card {
+    margin-top: 150px;              /* reduced vertical gap */
+    margin-left: 25px;             /* more spacing left */
+    margin-right: 25px;            /* more spacing right */
+    border: black 1px solid !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: scale(0.8);         /* smaller card */
+    max-width: 250px;              /* optional: limit card width */
+}
+
+/* Extra spacing between grid columns in menu */
+#menu .col-lg-3, 
+#menu .col-md-4, 
+#menu .col-sm-6 {
+    padding: 20px;                 /* spacing around each card */
+}
+
+#card-1 {
+    transform:
+        perspective(800px) translateX(10px) rotateY(25deg) scale(1) rotateX(10deg);
+    filter: blur(3px);
+    transition: 0.4s ease all;
+}
+
+#card-2 {
+    transform:
+        perspective(800px) rotateY(-25deg) scale(1.2) rotateX(10deg);
+    filter: blur(1px);
+    transition: 0.4s ease all;
+}
+
+#card-3 {
+    transform:
+        perspective(800px) translateX(25px) rotateY(25deg) scale(1.1) rotateX(10deg);
+    filter: blur(2px);
+    transition: 0.4s ease all;
+}
+
+#card-4 {
+    transform:
+        perspective(800px) translateX(-10px) rotateY(-25deg) scale(0.9) rotateX(10deg);
+    filter: blur(4px);
+    transition: 0.4s ease all;
+}
+
+#card-1:hover {
+    box-shadow: 30px 30px 0px 0px #ffff00;
+    transform: perspective(none) scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+#card-2:hover {
+    box-shadow: -25px 20px 0px 0px #ffff00;
+    transform: perspective(none) scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+#card-3:hover {
+    box-shadow: 30px 30px 0px 0px #ffff00;
+    transform: perspective(none) scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+#card-4:hover {
+    box-shadow: -30px 30px 0px 0px #ffff00;
+    transform: perspective(none) scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+.card .btn {
+    border: none !important;
+    background: none !important;
+    color: #cc510d !important;
+    font-weight: 600;
+    font-size: large;
+}
+
+.card .btn:hover {
+    scale: none !important;
+    font-weight: 700;
+}
+
+
+.clip-1{  
+    width:600px;
+    height: 600px;
+    background-size: 600px;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    scale: 1;
+}
+.clip-1::before{
+    content: ' ';
+    position: absolute;
+    width:600px;
+    height: 600px;
+    background: url(./media/A1\ before.png);
+    background-size: 600px;
+    transform: translateX(-4%);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    scale: 0.98;
+}
+.clip-1::after{
+    content: ' ';
+    position: absolute;
+    width:600px;
+    height: 600px;
+    background: url(./media/A1.png);
+    background-size: 600px;
+    transform: translateX(-4%);
+    opacity: 0.9;
+    transition: 0.5s ease-in-out;
+    scale: 1;
+}
+.clip-2{
+    
+    width:600px;
+    height: 600px;
+    background-size: 600px;
+}
+.clip-2::before{
+    content: ' ';
+    position:absolute;
+    width:600px;
+    height: 600px;
+    background: url(./media/A2\ before.png);
+    background-size: 600px;
+    transform: translateX(-4%);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    scale: 0.98;
+}
+
+.clip-2::after{
+    content: ' ';
+    position: absolute;
+    width:600px;
+    height: 600px;
+    background: url(./media/A2.png);
+    background-size: 600px;
+    transform: translateX(-4%);
+    opacity: 0.9;
+    transition: 0.5s ease-in-out;
+    scale: 1;
+}
+
+.color:hover  .clip-1::before{
+    opacity: 1;
+    scale: 1;
+}
+
+.color:hover  .clip-1::after{
+    opacity: 0;
+    scale: 0.98;
+}
+
+.color:hover  .clip-2::before{
+    opacity: 1;
+    scale: 1;
+}
+
+.color:hover  .clip-2::after{
+    opacity: 0;
+    scale: 0.98;
+}
+
+#contact{
+    background-color: #cc510d;
+}
+
+#contact img{
+    height:700px;
+    width: auto;
+    background-color: #fff;
+}
+
+#contact .divider{
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+#contact form input{
+    background-color: #0000002b !important;
+    border: #aa450f 2px solid !important;
+}
+#contact form input:focus{
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.266) !important;
+}
+#contact form textarea{
+    background-color: #0000002b !important;
+    border: #aa450f 2px solid !important;
+}
+#contact form textarea:focus{
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.266) !important;
+}
+
+#contact form .btn:hover{
+    background-color: #aa450f !important;
+    border:  #ffffff44 2px solid !important;
+}
+
+#contact .social-icon{
+    /* scale: 1.6 !important ; */
+    font-size: 30px !important;
+}
+
+
+#review{
+    display: flex;
+    height: 100vh !important; 
+    justify-content: center !important;
+    align-items: center !important;
+    /* background-color: #000; */
+    
+}
+
+.over{
+    overflow: hidden !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+
+.left-arrow, .right-arrow{
+    background-color: #aa450f !important;
+    padding: 0px 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    background-color: #cc510d !important;
+    transform: scale(1.2);
+}
+
+
+/* Responsive carousel controls */
+@media (max-width: 768px) {
+    .left-arrow, .right-arrow {
+        padding: 0 5px;
+    }
+}
+
+.star-icon{
+    color: #ffae00;
+}
+
+#review .card, #calendar .card{
+    border: none !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Improved hover animations for cards */
+.card:hover{
+    transform: translateY(-10px) scale(1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+#calendar {
+    display: flex;
+    height: 100vh !important; 
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Improved calendar card styling */
+.calendar-card {
+    border: none !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin-top: 50px;
+}
+
+.calendar-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments for calendar section */
+@media (max-width: 768px) {
+    #calendar, #review {
+        height: auto !important;
+        padding: 40px 0;
+    }
+    
+    .calendar-card {
+        margin: 20px auto;
+        width: 90% !important;
+    }
+    
+    .over {
+        height: auto !important;
+        padding: 20px 0;
+    }
+    
+    .carousel-inner {
+        padding: 0 10px;
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%;
+    }
+}
+
+
+#footer .nav-link{
+font-size: 25px !important;
+}
+
+
+@media (max-width: 1270px) {
+    #contact img {
+        height: 500px;
+        width: auto;
+        background-color: #fff;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #contact .form {
+        scale: 0.8;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .num {
+        padding: 0px !important;
+        margin: 0px !important;
+        font-size: clamp(1.5em, 3vh, 4em) !important;
+    }
+    
+    .email {
+        font-size: clamp(6px, 3vh, 12px);
+    }
+}
+
+@media (max-width: 992px) {
+    .hero .col-lg-6 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    /* About section */
+    .clip-1, .clip-2 {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .clip-1::before, .clip-1::after,
+    .clip-2::before, .clip-2::after {
+        width: 100%;
+        height: 500px;
+    }
+    
+    /* Align content properly */
+    .text-lg-start {
+        text-align: center !important;
+    }
+    
+    .text-lg-end {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 898px) {
+    .email {
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 80vh;
+    }
+    
+    /* General improvements */
+    section {
+        padding: 2rem 1rem;
+    }
+    
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    /* Menu section */
+    .menu-item .card {
+        margin: 15px auto;
+        width: 80% !important;
+    }
+    
+    /* About section */
+    .clip-1, .clip-2 {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .clip-1::before, .clip-1::after,
+    .clip-2::before, .clip-2::after {
+        width: 100%;
+        height: 400px;
+    }
+    
+    /* Contact section */
+    #contact .row {
+        flex-direction: column;
+    }
+    
+    #contact .col-md-6 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    /* Review section cards */
+    .card {
+        margin: 10px auto !important;
+        width: 90% !important;
+        max-width: 300px;
+    }
+    
+    #calendar {
+        height: auto !important;
+        padding: 2rem 0;
+    }
+    
+    .calendar-container {
+        height: auto;
+    }
+    
+    #calendar .carousel-item img {
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Hero section */
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .hero .display-5 {
+        font-size: 2rem;
+    }
+    
+    .hero .lead {
+        font-size: 1rem;
+    }
+    
+    .hero .col-lg-6 {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    /* Menu section */
+    .card {
+        margin: 10px auto;
+        width: 90% !important;
+        max-width: 300px;
+    }
+    
+    .menu-item .card {
+        margin: 20px auto;
+    }
+    
+    /* About section */
+    .clip-1, .clip-2 {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+    }
+    
+    .clip-1::before, .clip-1::after,
+    .clip-2::before, .clip-2::after {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+    }
+    
+    /* Contact section */
+    #contact {
+        padding: 1rem !important;
+    }
+    
+    #contact img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #contact .form {
+        scale: 1;
+        padding: 1rem;
+    }
+    
+    .num {
+        font-size: 1.2rem !important;
+        text-align: center;
+    }
+    
+    /* Review section */
+    #review {
+        height: auto !important;
+        padding: 2rem 0;
+    }
+    
+    .over {
+        height: auto;
+    }
+    
+    /* Calendar section */
+    #calendar {
+        height: auto !important;
+        padding: 2rem 0;
+    }
+    
+    .calendar-container {
+        height: auto;
+    }
+    
+    /* Footer section */
+    #footer {
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    #footer .nav {
+        justify-content: center !important;
+    }
+}

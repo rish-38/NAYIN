@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nayin - Special lens.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/nayin.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <div>
+        <a class="navbar-brand logo mx-3" href="#">NAYIN</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item" id="nav-1">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item" id="nav-2">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item" id="nav-3">
+            <a class="nav-link" href="#about">About us</a>
+          </li>
+          <li class="nav-item" id="nav-4">
+            <a class="nav-link" href="#contact">Contact us</a>
+          </li>
+          <li class="nav-item" id="nav-5">
+            <a class="nav-link" href="#review">Reviews</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="my-5 d-flex text-center align-items-center hero" id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 mx-auto text-light">
+          <h1 class="display-5 fw-bold text-body-emphasis-light">Centered hero</h1>
+          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+            popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
+            prebuilt components, and powerful JavaScript plugins.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3 mx-2">Buy now</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4 mx-2">View more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-4  py-5 text-center align-items-center" id="menu">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-5 fw-bold text-body-emphasis-light">Menu</h1>
+        <p class=" mt-4 col-lg-8 mx-auto">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+          world’s most
+          popular front-end open source toolkit.</p>
+
+      </div>
+    </div>
+
+    <div class="menu-item mx-auto">
+      <ul class="nav justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="btn" id="trending-tab" data-bs-toggle="tab" data-bs-target="#trending-tab-pane" type="button"
+            role="tab" aria-controls="trending-tab-pane" aria-selected="true">#Trending</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="btn" id="fancy-tab" data-bs-toggle="tab" data-bs-target="#fancy-tab-pane" type="button"
+            role="tab" aria-controls="fancy-tab-pane" aria-selected="false">#Fancy</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="btn" id="minimal-tab" data-bs-toggle="tab" data-bs-target="#minimal-tab-pane" type="button"
+            role="tab" aria-controls="minimal-tab-pane" aria-selected="false">#minimal</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="btn" id="sunglass-tab" data-bs-toggle="tab" data-bs-target="#sunglass-tab-pane" type="button"
+            role="tab" aria-controls="sunglass-tab-pane" aria-selected="false">#sunglass</button>
+        </li>
+      </ul>
+      <div class="tab-content mb-5 pb-5" id="myTabContent">
+        <div class="tab-pane fade show active" id="trending-tab-pane" role="tabpanel" aria-labelledby="trending-tab"
+          tabindex="0">
+
+          <div class="row justify-content-center mb-0 pb-0">
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-1">
+                <img src="./assets/media/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Italian black</a>
+                  <h6 class="card-title"> 1499 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-2">
+                <img src="./assets/media/9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">cheeta spirit</a>
+                  <h6 class="card-title">1299 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-3">
+                <img src="./assets/media/11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Cops sunglass</a>
+                  <h6 class="card-title">799 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-4">
+                <img src="./assets/media/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">classic elite</a>
+                  <h6 class="card-title">999 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="fancy-tab-pane" role="tabpanel" aria-labelledby="fancy-tab" tabindex="1">
+
+          <div class="row justify-content-center mb-0 pb-0">
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-1">
+                <img src="./assets/media/13.jpg" class="card-img-top" alt="..." style="filter: hue-rotate(203deg);">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Rosy Pink</a>
+                  <h6 class="card-title"> 1499 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-2">
+                <img src="./assets/media/9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">cheeta spirit</a>
+                  <h6 class="card-title">1299 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-3">
+                <img src="./assets/media/10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Tranquill Blue</a>
+                  <h6 class="card-title">799 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-4">
+                <img src="./assets/media/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Bear Brown</a>
+                  <h6 class="card-title">999 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="minimal-tab-pane" role="tabpanel" aria-labelledby="minimal-tab" tabindex="2">
+
+
+          <div class="row justify-content-center mb-0 pb-0">
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-1">
+                <img src="./assets/media/1.jpg" class="card-img-top" alt="..." style="filter: hue-rotate(203deg);">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Square Nerd</a>
+                  <h6 class="card-title"> 1499 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-2">
+                <img src="./assets/media/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Round Nerd</a>
+                  <h6 class="card-title">1299 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-3">
+                <img src="./assets/media/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Bordered Nerd</a>
+                  <h6 class="card-title">799 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-4">
+                <img src="./assets/media/12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">classic Nerd</a>
+                  <h6 class="card-title">999 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="sunglass-tab-pane" role="tabpanel" aria-labelledby="sunglass-tab" tabindex="4">
+
+
+          <div class="row justify-content-center mb-0 pb-0">
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-1">
+                <img src="./assets/media/7.jpg" class="card-img-top" alt="..." style="filter: hue-rotate(203deg);">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Moter Black </a>
+                  <h6 class="card-title"> 1499 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-2">
+                <img src="./assets/media/8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Jet Black</a>
+                  <h6 class="card-title">1299 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-3">
+                <img src="./assets/media/11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Cops Black</a>
+                  <h6 class="card-title">799 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+              <div class="card" id="card-4">
+                <img src="./assets/media/14.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn-primary">Stud Black</a>
+                  <h6 class="card-title">999 &#8377;</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row pt-2 pb-5">
+      <div class="col">
+
+        <!-- <a type="button" class="btn btn-lg px-4 mx-2" id="nav-5">View more</a> -->
+      </div>
+    </div>
+
+  </section>
+  <!-- <hr> -->
+
+
+  <!-- Calendar Carousel Section -->
+  <section class="container-fluid py-5" id="calendar">
+   
+
+    <div id="calendarCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/1.jpg" class="img-fluid" alt="Calendar 1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/2.jpg" class="img-fluid" alt="Calendar 2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/3.jpg" class="img-fluid" alt="Calendar 3">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/4.jpg" class="img-fluid" alt="Calendar 4">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/5.jpg" class="img-fluid" alt="Calendar 5">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/6.jpg" class="img-fluid" alt="Calendar 6">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/7.jpg" class="img-fluid" alt="Calendar 7">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 8 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/8.jpg" class="img-fluid" alt="Calendar 8">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/9.jpg" class="img-fluid" alt="Calendar 9">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/10.jpg" class="img-fluid" alt="Calendar 10">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 11 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/11.jpg" class="img-fluid" alt="Calendar 11">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 12 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <img src="./assets/calender/12.jpg" class="img-fluid" alt="Calendar 12">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#calendarCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#calendarCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+        <button type="button" data-bs-target="#calendarCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="about">
+    <div class="row text-center pt-5 mt-5 ">
+      <h1 class="display-5 fw-bold text-body-emphasis-light">About us</h1>
+    </div>
+    <div class="row align-items-center justify-content-md-center  py-5 g-5 color">
+      <div class="col-md-12   col-lg-6 clip-1">
+
+
+      </div>
+      <div class="col-6 col-lg-6 text-sm-center text-lg-start">
+        <h3>Elevating Vision with Style and Precision</h3>
+        <p class="py-5">
+          At Nayin Eye Optics, we are committed to delivering exceptional eye care and stylish eyewear solutions. Our
+          extensive collection features frames that range from contemporary trends to timeless classics, catering to
+          men, women, and children. We utilize advanced lens technologies, including anti-glare, blue-light protection,
+          and progressive lenses, to ensure optimal clarity and comfort. Our expert team provides personalized
+          consultations, guiding you to eyewear that complements your unique style and meets your visual needs.
+        </p>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-md-center flex-sm-row-reverse  py-5 g-5 color">
+      <div class="col-6 clip-2">
+
+
+      </div>
+      <div class="col-6 text-sm-center text-lg-end">
+        <h3>Elevating Vision with Style and Precision</h3>
+        <p class="py-5">
+          At Nayin Eye Optics, we are committed to delivering exceptional eye care and stylish eyewear solutions. Our
+          extensive collection features frames that range from contemporary trends to timeless classics, catering to
+          men, women, and children. We utilize advanced lens technologies, including anti-glare, blue-light
+          protection,
+          and progressive lenses, to ensure optimal clarity and comfort. Our expert team provides personalized
+          consultations, guiding you to eyewear that complements your unique style and meets your visual needs.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="p-5">
+      <div class="row text-center pb-0">
+        <h1 class="display-5 fw-bold text-body-emphasis-light text-light">Contact us</h1>
+      </div>
+      <div class="row container mx-auto">
+        <div class="col-md-6 pt-5 col-sm-12">
+          <img src="./assets/media/p.jpg" alt="" class=" rounded-4">
+        </div>
+        <div class="col-md-6 align-content-center col-sm-12 form">
+          <div class="row">
+            <h3 class=" fw-bold text-light text-body-emphasis-light text-lg-start text-sm-center mt-5 pt-5 num"> +91 123 456
+              78901 | WWW.NAYIN.COM </h3>
+            <h3 class=" fs-5 fw-normal text-light text-body-emphasis-light text-lg-start text-sm-center pt-2">Nayin Eye
+              Optics
+              Shop No. 12, First Floor,
+              Vision Plaza, MG Road,
+              Andheri West, Mumbai – 400058,
+              Maharashtra, India.</h3>
+          </div>
+          <hr class="divider">
+          <div class="row py-5 text-light email">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="fs-2 form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text fs-5 text-light opacity-50">We'll never share your email with
+                  anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="fs-2 form-label">Leave your feedback</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="row justify-content-between">
+                <button type="submit" class=" col-4 mx-3 my-3  pt-2 fs-5 fw-normal btn btn-primary">Send
+                  message</button>
+
+                <ul class="nav col-7 justify-content-end align-items-center list-unstyled">
+                  <li class="ms-3">
+                    <a class="nav-item nav-link text-light" href="#" aria-label="Instagram">
+                      <i class="ri-instagram-line social-icon"></i>
+                    </a>
+                  </li>
+                  <li class="ms-3">
+                    <a class="nav-item nav-link text-light" href="#" aria-label="Facebook">
+                      <i class="ri-facebook-box-line social-icon"></i>
+                    </a>
+                  </li>
+                  <li class="ms-3">
+                    <a class="nav-item nav-link text-light" href="#" aria-label="twitter">
+                      <i class="ri-twitter-x-line social-icon"></i>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="review">
+
+    <div class="over">
+
+      <div class="row text-center pb-0">
+        <h1 class="display-5 fw-bold text-body-emphasis-light text-dark">Reviews</h1>
+      </div>
+
+      <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-evenly">
+              <div class="col-md-2">
+
+                <div class="card y" style="width: 18rem;">
+                  <div class="d-flex justify-content-center pt-3">
+                    <img src="./assets/media/R1.jpg" class="card-img-top w-75 h-75 object-fit-cover rounded-circle" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center py-1 star-icon">
+                      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                        class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center">Some quick example text to build on the card title and make up the
+                      bulk of the card’s content.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-2">
+
+                <div class="card " style="width: 18rem;">
+                  <div class="d-flex justify-content-center pt-3">
+                    <img src="./assets/media/R2.jpg" class="card-img-top w-75 h-75 object-fit-cover rounded-circle" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center py-1 star-icon">
+                      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                        class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center">Some quick example text to build on the card title and make up the
+                      bulk of the card’s content.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-2">
+
+                <div class="card " style="width: 18rem;">
+                  <div class="d-flex justify-content-center pt-3">
+                    <img src="./assets/media/R3.jpg" class="card-img-top w-75 h-75 object-fit-cover rounded-circle" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center py-1 star-icon">
+                      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                        class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center">Some quick example text to build on the card title and make up the
+                      bulk of the card’s content.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+
+          <div class="carousel-item">
+            <div class="row justify-content-evenly">
+              <div class="col-md-2">
+
+                <div class="card " style="width: 18rem;">
+                  <div class="d-flex justify-content-center pt-3">
+                    <img src="./assets/media/R4.jpg" class="card-img-top w-75 h-75 object-fit-cover rounded-circle" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center py-1 star-icon">
+                      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                        class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center">Some quick example text to build on the card title and make up the
+                      bulk of the card’s content.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-2">
+
+                <div class="card " style="width: 18rem;">
+                  <div class="d-flex justify-content-center pt-3">
+                    <img src="./assets/media/R5.jpg" class="card-img-top w-75 h-75 object-fit-cover rounded-circle" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center py-1 star-icon">
+                      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                        class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center">Some quick example text to build on the card title and make up the
+                      bulk of the card’s content.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-2">
+
+                <div class="card " style="width: 18rem;">
+                  <div class="d-flex justify-content-center pt-3">
+                    <img src="./assets/media/R6.jpg" class="card-img-top w-75 h-75 object-fit-cover rounded-circle" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center py-1 star-icon">
+                      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                        class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center">Some quick example text to build on the card title and make up the
+                      bulk of the card’s content.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+          <div class="carousel-item ">
+            <div class="row justify-content-evenly">
+              <div class="col-md-2">
+
+                <div class="card " style="width: 18rem;">
+                  <div class="d-flex justify-content-center pt-3">
+                    <img src="./assets/media/R7.jpg" class="card-img-top w-75 h-75 object-fit-cover rounded-circle" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center py-1 star-icon">
+                      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                        class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center">Some quick example text to build on the card title and make up the
+                      bulk of the card’s content.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-2">
+
+                <div class="card " style="width: 18rem;">
+                  <div class="d-flex justify-content-center pt-3">
+                    <img src="./assets/media/R8.jpg" class="card-img-top w-75 h-75 object-fit-cover rounded-circle" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center py-1 star-icon">
+                      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                        class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center">Some quick example text to build on the card title and make up the
+                      bulk of the card’s content.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-2">
+
+                <div class="card " style="width: 18rem;">
+                  <div class="d-flex justify-content-center pt-3">
+                    <img src="./assets/media/R9.jpg" class="card-img-top w-75 h-75 object-fit-cover rounded-circle" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center py-1 star-icon">
+                      <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i
+                        class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text text-center">Some quick example text to build on the card title and make up the
+                      bulk of the card’s content.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <!-- Custom Controls with Remix Icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+          <i class="ri-arrow-left-s-fill fs-1 left-arrow"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+          <i class="ri-arrow-right-s-fill fs-1 right-arrow"></i>
+        </button>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center"> <a href="/"
+          class="mb-3 me-5 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+         </a> <span class="mb-3 mb-md-0 text-body-secondary text-body-emphasis">NAYIN © 2025 Company, Inc</span> </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5">
+
+        <li class="ms-3">
+          <a class="nav-item nav-link text-dark" href="#" aria-label="Instagram">
+            <i class="ri-instagram-line social-icon"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="nav-item nav-link text-dark" href="#" aria-label="Facebook">
+            <i class="ri-facebook-box-line social-icon"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="nav-item nav-link text-dark" href="#" aria-label="twitter">
+            <i class="ri-twitter-x-line social-icon"></i>
+          </a>
+        </li>
+
+      </ul>
+    </footer>
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
